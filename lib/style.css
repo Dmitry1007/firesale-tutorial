@@ -21,7 +21,14 @@ body, input {
   font: menu;
 }
 
-textarea, input, div, button { outline: none; }
+textarea, input, div, button {
+  outline: 1px solid;
+}
+
+textarea.raw-markdown {
+  background-color: rgb(196, 216, 213);
+  border-top: 1px solid;
+}
 
 .controls {
   background-color: rgb(217, 241, 238);
@@ -61,6 +68,11 @@ textarea, input, div, button { outline: none; }
   flex-grow: 1;
   padding: 1em;
   overflow: scroll;
+  border-top: 1px solid;
+}
+
+.rendered-html {
+  background-color: rgb(217, 241, 238);
 }
 
 .raw-markdown {
